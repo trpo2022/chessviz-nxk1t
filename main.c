@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define n 9
+
 int main()
 {
     int i, j;
-    char chess[9][9]
+    char chess[n][n]
             = {{'8', 'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
                {'7', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
                {'6', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
@@ -17,8 +19,8 @@ int main()
                {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
     printf("\n");
 
-    for (i = 0; i < 9; i++) {
-        for (j = 0; j < 9; j++) {
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
             printf("%c", chess[i][j]);
         }
         printf("\n");
