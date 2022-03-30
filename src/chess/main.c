@@ -8,7 +8,7 @@
 #include <libchess/PrintTable.h>
 
 #define n 8
-#define step 11
+#define step 12
 
 int main()
 {
