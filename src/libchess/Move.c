@@ -22,21 +22,21 @@ void Move(int** chess, char* input_step)
         if (input_step[i] == 'h')
             Xw1 = 7;
 
-        if (input_step[i] == '1')
-            Yw1 = 0;
-        if (input_step[i] == '2')
-            Yw1 = 1;
-        if (input_step[i] == '3')
-            Yw1 = 2;
-        if (input_step[i] == '4')
-            Yw1 = 3;
-        if (input_step[i] == '5')
-            Yw1 = 4;
-        if (input_step[i] == '6')
-            Yw1 = 5;
-        if (input_step[i] == '7')
-            Yw1 = 6;
         if (input_step[i] == '8')
+            Yw1 = 0;
+        if (input_step[i] == '7')
+            Yw1 = 1;
+        if (input_step[i] == '6')
+            Yw1 = 2;
+        if (input_step[i] == '5')
+            Yw1 = 3;
+        if (input_step[i] == '4')
+            Yw1 = 4;
+        if (input_step[i] == '3')
+            Yw1 = 5;
+        if (input_step[i] == '2')
+            Yw1 = 6;
+        if (input_step[i] == '1')
             Yw1 = 7;
 
         if (input_step[i] == '-')
@@ -62,21 +62,21 @@ m:
         if (input_step[i] == 'h')
             Xw2 = 7;
 
-        if (input_step[i] == '1')
-            Yw2 = 0;
-        if (input_step[i] == '2')
-            Yw2 = 1;
-        if (input_step[i] == '3')
-            Yw2 = 2;
-        if (input_step[i] == '4')
-            Yw2 = 3;
-        if (input_step[i] == '5')
-            Yw2 = 4;
-        if (input_step[i] == '6')
-            Yw2 = 5;
-        if (input_step[i] == '7')
-            Yw2 = 6;
         if (input_step[i] == '8')
+            Yw2 = 0;
+        if (input_step[i] == '7')
+            Yw2 = 1;
+        if (input_step[i] == '6')
+            Yw2 = 2;
+        if (input_step[i] == '5')
+            Yw2 = 3;
+        if (input_step[i] == '4')
+            Yw2 = 4;
+        if (input_step[i] == '3')
+            Yw2 = 5;
+        if (input_step[i] == '2')
+            Yw2 = 6;
+        if (input_step[i] == '1')
             Yw2 = 7;
 
         if (input_step[i] == ' ')
@@ -101,21 +101,21 @@ m:
         if (input_step[i] == 'h')
             Xb1 = 7;
 
-        if (input_step[i] == '1')
-            Yb1 = 0;
-        if (input_step[i] == '2')
-            Yb1 = 1;
-        if (input_step[i] == '3')
-            Yb1 = 2;
-        if (input_step[i] == '4')
-            Yb1 = 3;
-        if (input_step[i] == '5')
-            Yb1 = 4;
-        if (input_step[i] == '6')
-            Yb1 = 5;
-        if (input_step[i] == '7')
-            Yb1 = 6;
         if (input_step[i] == '8')
+            Yb1 = 0;
+        if (input_step[i] == '7')
+            Yb1 = 1;
+        if (input_step[i] == '6')
+            Yb1 = 2;
+        if (input_step[i] == '5')
+            Yb1 = 3;
+        if (input_step[i] == '4')
+            Yb1 = 4;
+        if (input_step[i] == '3')
+            Yb1 = 5;
+        if (input_step[i] == '2')
+            Yb1 = 6;
+        if (input_step[i] == '1')
             Yb1 = 7;
 
         if (input_step[i] == '-')
@@ -141,32 +141,26 @@ l:
         if (input_step[i] == 'h')
             Xb2 = 7;
 
-        if (input_step[i] == '1')
-            Yb2 = 0;
-        if (input_step[i] == '2')
-            Yb2 = 1;
-        if (input_step[i] == '3')
-            Yb2 = 2;
-        if (input_step[i] == '4')
-            Yb2 = 3;
-        if (input_step[i] == '5')
-            Yb2 = 4;
-        if (input_step[i] == '6')
-            Yb2 = 5;
-        if (input_step[i] == '7')
-            Yb2 = 6;
         if (input_step[i] == '8')
+            Yb2 = 0;
+        if (input_step[i] == '7')
+            Yb2 = 1;
+        if (input_step[i] == '6')
+            Yb2 = 2;
+        if (input_step[i] == '5')
+            Yb2 = 3;
+        if (input_step[i] == '4')
+            Yb2 = 4;
+        if (input_step[i] == '3')
+            Yb2 = 5;
+        if (input_step[i] == '2')
+            Yb2 = 6;
+        if (input_step[i] == '1')
             Yb2 = 7;
 
         if (input_step[i] == ' ')
             break;
     }
-    printf("\nx0,y0 - white = %d\nx1,y1 - white = %d\nx0,y0 - black = "
-           "%d\nx1,y1 - black = %d\n",
-           chess[Xw1][Yw1],
-           chess[Xw2][Yw2],
-           chess[Xb1][Yb1],
-           chess[Xb2][Yb2]);
 
     temp = chess[Yw1][Xw1];
     chess[Yw1][Xw1] = chess[Yw2][Xw2];
